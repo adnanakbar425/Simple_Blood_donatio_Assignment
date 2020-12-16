@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddNewDonorActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/h1"
+            android:text="Add new Donor"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/h1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp">
+
+            <EditText
+                android:id="@+id/username_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:hint="Full Name"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:inputType="textPersonName"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:singleLine="true"
+                />
+
+            <EditText
+                android:id="@+id/phone_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="20dp"
+                android:hint="Phone"
+                android:drawableStart="@drawable/ic_baseline_phone_android_24"
+                android:inputType="numberDecimal"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/address_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/ic_home"
+                android:drawablePadding="20dp"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:hint="Address"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimaryDark" />
+            <EditText
+                android:id="@+id/blood_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="20dp"
+                android:hint="Blood Group"
+                android:drawableStart="@drawable/ic_blood"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/add_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/btn_back"
+                android:text="Add"
+                android:textAlignment="center"
+                android:textColor="@color/color_white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
